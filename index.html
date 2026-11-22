@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giuliano Ferreira | TOTVS Protheus</title>
+  <meta name="description"
+    content="Giuliano Ferreira's portfolio: development and support of TOTVS Protheus ERP with ADVPL, TLPP, REST APIs and PO UI (Angular).">
+  <script>
+    // applies the saved theme (dark by default) before the page is drawn, avoiding a flash of the light theme
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem("theme"); } catch (e) { }
+      if (!theme) theme = "dark";
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+  </style>
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <div class="nav-tools">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"
+          data-label-dark="Switch to dark theme" data-label-light="Switch to light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="presentation">
+
+      <div class="self-image"><img src="My_photo_Cartoon-removebg-preview.png" alt="Illustration of Giuliano Ferreira"></div>
+      <div class="text">
+        <h1>Hi, I'm <span class="highlight-name">Giuliano</span></h1>
+        <h2>Systems Analyst <br> TOTVS Protheus</h2>
+        <p class="tech-stack">ADVPL - TLPP - REST APIs - PO UI </p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/5561991330547" target="_blank" class="btn whatsapp">
+            <i class="fab fa-whatsapp"></i> Contact Me
+          </a>
+          <a href="Resume-Giuliano-Ferreira.pdf" target="_blank" class="btn cv">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/giuthelink" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/giuliano-ferreira-563823210/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:giuliano.br.work@outlook.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <div class="about-text">
+
+        <h1>About</h1>
+
+        <h2>Solid experience in development and support with TOTVS Protheus ERP, using ADVPL, TLPP, REST APIs and PO UI
+          (Angular). Works as a Systems Analyst Assistant at Grupo Zancanaro (agribusiness), covering the Purchasing,
+          Inventory/Costs, Billing, Finance and Agribusiness modules.</h2>
+
+        <h2>Beyond development, took part in the Protheus release upgrade from 12.1.2410 to 12.1.2510 across four company
+          databases, handling environment preparation, AppServer, DbAccess, RPO and TSS updates, data dictionary updates
+          through UPDDISTR and post-upgrade validation.</h2>
+
+        <h2>Complements this work with SQL, data analysis (Power BI, Power Query) and electronic invoice (NF-e)
+          integration. Degree in Computer Engineering from IESB. <br> <br>
+          Featured training:
+          <p>- Protheus 12 – Architecture and Installation in Practice - Udemy (3.5 h).
+            <br>- Protheus – Configurator in Practice - Udemy (3 h).
+            <br>- Learn TOTVS Protheus ERP in Practice – Purchasing - Udemy (6 h).
+            <br>- Database Administration - SENAI DF (240 h, in person).
+            <br>- Front-End Developer - SENAI DF (240 h, in person).
+            <br>- Randstad Data Analysis Bootcamp - DIO (102 h).
+          </p>
+        </h2>
+      </div>
+
+      <div class="about-img"><img src="about-img.jpg" alt="Photo of Giuliano Ferreira"></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h1>Experience</h1>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h2>Systems Analyst Assistant</h2>
+        <p class="experience-meta">Grupo Zancanaro · Feb 2026 – present · Brasília, Brazil</p>
+      </div>
+      <ul>
+        <li>Support and maintenance of the Purchasing, Finance, Inventory/Costs, Billing and Agribusiness modules.</li>
+        <li>Development of a PO UI (Angular) portal integrated with Protheus through TLPP REST APIs.</li>
+        <li>ADVPL/TLPP routines, such as reversing residue elimination in purchase orders and printing QR Code labels.
+        </li>
+        <li>Release upgrade from 12.1.2410 to 12.1.2510 across four company databases.</li>
+        <li>Hyper-V environment, automated backup (BackupPro) and NF-e integration (Qive).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+
+    <div class="protheus-projects">
+      <div class="project-card">
+        <i class="fas fa-table-columns project-icon"></i>
+        <h2>PO UI Registration Portal</h2>
+        <p>Product Monitor in a Dynamic Table, with search, advanced search, sorting and column settings, plus screens to
+          create and edit products and register suppliers.</p>
+        <div class="tags"><span>PO UI</span><span>Angular</span><span>TypeScript</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-plug project-icon"></i>
+        <h2>TLPP REST APIs</h2>
+        <p>TLPP endpoints that feed the PO UI portal with Protheus product and supplier data, allowing records to be
+          queried, created and edited.</p>
+        <div class="tags"><span>TLPP</span><span>REST</span><span>JSON</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-qrcode project-icon"></i>
+        <h2>QR Code Labels</h2>
+        <p>Product labels with a QR Code (code and description) printed through the Protheus spool, available in the
+          Product Registration screen and directly from the PO UI portal list.</p>
+        <div class="tags"><span>ADVPL</span><span>TLPP</span><span>Printing</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-rotate-left project-icon"></i>
+        <h2>Residue Elimination Reversal</h2>
+        <p>A button in the Purchase Order routine that reverses orders closed by residue elimination, reactivating them
+          without entering a new order.</p>
+        <div class="tags"><span>ADVPL</span><span>Purchasing</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-server project-icon"></i>
+        <h2>Release Upgrade 2410 → 2510</h2>
+        <p>Release upgrade across four databases: full backup, AppServer, DbAccess, RPO and TSS updates, data dictionary
+          through UPDDISTR and validation of stored procedures, menus and Smart View.</p>
+        <div class="tags"><span>AppServer</span><span>DbAccess</span><span>UPDDISTR</span></div>
+      </div>
+    </div>
+
+    <h2 class="sub-title">Data Analysis (Power BI)</h2>
+    <div class="pbi-projects">
+      <iframe title="Challenge-MySQL-&-Power-BI" width="600" height="373.5"
+        src="https://app.powerbi.com/view?r=eyJrIjoiYTgyZDM0NTktZGZjNy00Nzg4LTgyZGEtOGYxZmQyMWUxNDE4IiwidCI6IjdlNDA0OGJhLTMwNzUtNGQyNi1hYjg4LWNhNDhmZDRkY2MxNSJ9"
+        frameborder="0" allowFullScreen="true"></iframe>
+      <iframe title="DashboardVendas" width="600" height="373.5"
+        src="https://app.powerbi.com/view?r=eyJrIjoiYWJkZTUwYjAtZTg2Zi00Y2U1LThiNmEtYWM2NDAwNzlhMjE1IiwidCI6IjdlNDA0OGJhLTMwNzUtNGQyNi1hYjg4LWNhNDhmZDRkY2MxNSJ9"
+        frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+  </section>
+
+  <section id="services">
+    <h1>Services</h1>
+
+    <div class="services-container">
+      <div class="service-card">
+        <h2>ADVPL/TLPP Development</h2>
+        <i class="fas fa-code service-icon"></i>
+        <p>Custom routines, entry points, reports and improvements in the Protheus back-office modules.</p>
+      </div>
+      <div class="service-card">
+        <h2>PO UI and REST APIs</h2>
+        <i class="fas fa-laptop-code service-icon"></i>
+        <p>Modern, responsive PO UI (Angular) interfaces integrated with Protheus through TLPP REST APIs.</p>
+      </div>
+      <div class="service-card center-card">
+        <h2>Support and Environment</h2>
+        <i class="fas fa-screwdriver-wrench service-icon"></i>
+        <p>User support, release upgrades, AppServer, DbAccess, TSS, data dictionary and environment validation.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Giuliano Ferreira. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/giuthelink" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/giuliano-ferreira-563823210/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:giuliano.br.work@outlook.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
